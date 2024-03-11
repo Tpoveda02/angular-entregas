@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+/* Define tus variables CSS para colores principales */
+:root {
+    --my-primary-color: #2196f3; /* Color primario */
+    --my-accent-color: #e91e63; /* Color de acento */
+  }

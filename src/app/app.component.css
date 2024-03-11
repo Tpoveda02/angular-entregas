@@ -1,0 +1,193 @@
+/* Ejemplo de CSS para estilos personalizados */
+.container {
+  background-color: #ffffff;
+  /* Color de fondo azul claro */
+  border-radius: 15px;
+  margin-top: 8%;
+  padding: 0px;
+  width: 100%;
+  box-shadow: none;
+  
+}
+.container mat-card-title{
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container-content {
+  text-align: center;
+  
+}
+ /* Barra de busquedad  */
+.container-content-search input {
+  font-family: Roboto, sans-serif;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #0287e6;
+}
+
+.container-content-search-button {
+  margin: 10px;
+
+}
+
+.container-content-search-button button {
+  width: 60%;
+  background-color: #0287e6;
+  border: solid 1px #bbdefb;
+  color: white;
+  font-size: 3vh;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.container-content-search-button button:hover {
+  background-color: #74caffc6;
+}
+
+.container-content-search-button button i {
+  font-size: 2.5vh
+}
+
+/* Contenedor del resultado de la busquedad */
+.content-result{
+  background-color: #fdfdfd;
+  box-shadow: 2px 2px 2px 2px #74caffc6;
+  color: #010912;
+  border-radius: 15px;
+  box-shadow: 5px rgba(211, 235, 250, 0.776);
+
+}
+.content-result mat-card-header{
+  margin-bottom: 10px; 
+  align-self: center;
+}
+.content-result mat-card-header button{
+  color: #0287e6;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  
+}
+.archivo-guia{
+  padding: 5px;
+}
+.content-result mat-card-header .material-icons{
+  font-size: 18px;
+}
+.content-result mat-card-header .mat-icon{
+  height: 16px;
+    width: 16px;
+}
+.content-result mat-card-header mat-card-subtitle{
+  color: #939bb6;
+} 
+
+
+
+/* Barra de progreso */
+
+.mat-mdc-progress-bar {
+   --mdc-linear-progress-active-indicator-color: #0287e6; 
+   --mdc-linear-progress-indicator-color: #b3cbe3; 
+}
+.mat-mdc-progress-bar .mdc-linear-progress__buffer-bar {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Tabla */
+.container-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  background-color: #0287e6;
+}
+th {
+  color: #f0f0f0;
+}
+td{
+  color: #002249;
+  background-color: #ffffff;
+}
+
+/* Botones de acciones */
+/* Selecionar archivo */
+
+table button{
+  color: #f0f0f0;
+  background-color: #0287e6;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+::ng-deep .mat-mdc-dialog-container {
+  --mdc-dialog-container-color: #0287e6;
+  --mdc-dialog-text-color: #052535;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  background-image: url(../assets/img/archivo-nuevo.png);
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-color: #0287e6;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  color: transparent;
+  margin: 0;
+  min-width: 40px;
+  max-width: 40px;
+  line-height: 36px;
+  border-radius: 5px;
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+  transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 1rem;
+  font-weight: 500;
+}
+
+
+
+@media(max-width: 600px) {
+  mobile-label {
+    width: 80px;
+    display: inline-block;
+        font-weight: bold;
+  }
+
+  mat-header-cell {
+    display: none;
+  }
+
+  mat-cell { 
+    flex-direction: column;
+    align-items: start;
+    padding: 8px 24px;
+  }
+}
+
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
